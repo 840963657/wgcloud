@@ -99,8 +99,8 @@ public class WarnMailUtil {
                 //记录发送信息
                 logInfoService.save(title, commContent, StaticKeys.LOG_ERROR);
             } catch (Exception e) {
-                logger.error("发送内存告警邮件失败：", e);
-                logInfoService.save("发送内存告警邮件错误", e.toString(), StaticKeys.LOG_ERROR);
+                logger.error("发送CPU告警邮件失败：", e);
+                logInfoService.save("发送CPU告警邮件错误", e.toString(), StaticKeys.LOG_ERROR);
             }
         }
 
